@@ -21,12 +21,12 @@ import blosc2
 
 # --- Experiment Setup ---
 scale = 1.0  # Scale factor for the grid
-width, height = np.array((1000, 1000)) * scale  # Size of the grid
-n_frames = int(1000 * scale)  # Raise this for more frames
+width, height = np.array((100, 100)) * scale  # Size of the grid
+n_frames = int(100 * scale)  # Raise this for more frames
 dtype = np.float64  # Data type for the grid
 use_blosc2 = True  # Set to False to use NumPy arrays instead
 realize_blosc2 = False  # Set to False to skip Blosc2 realization
-make_animation = False  # Set to False to skip animation creation
+make_animation = True  # Set to False to skip animation creation
 travel_dim = 2  # Dimension to travel through (0 for X, 1 for Y, 2 for Z)
 
 # --- Coordinate creation ---
@@ -64,8 +64,6 @@ print("Generating frames...")
 mem_before = get_memory_mb()
 t0 = time.time()
 frames = compute_3Ddata()
-if realize_blosc2:
-    frames = frames[:]
 time_gen_frames = time.time() - t0
 print(f"Frames generated in {time_gen_frames:.2f} seconds")
 print(f"Memory used for frames: {get_memory_mb() - mem_before:.1f} MB")
