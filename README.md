@@ -7,21 +7,15 @@ Before the tutorial, it is advisable to have jupyter notebook installed (see [he
 This can be managed via Anaconda if you prefer (download [here](https://www.anaconda.com/download) and follow the instructions), 
 but in the command line (Windows/Linux/MacOS) it is very simple.
 
-Before installing Jupyter Notebook, make sure you have Python (version 3.8 or later) installed and either ``conda`` 
-or ``pip`` 
+Before installing Jupyter Notebook, make sure you have Python (version 3.8 or later) installed and ``pip`` 
 ```
 python --version
 pip --version
-conda --version
 ```
-``conda`` may be installed via following the instructions here https://docs.conda.io/en/latest/miniconda.html.
 
 ### Installing Jupyter Notebook
 Install Jupyter using ``pip`` via
 ```pip install notebook```
-or ``conda`` via
-```conda install -c conda-forge notebook```
-(make sure you are in the desired environment using ``conda activate myenv`` of course).
 
 #### Opening Jupyter Notebook from the Command Line
 Once installed, you can launch Jupyter Notebook by running
@@ -33,17 +27,12 @@ Use either SSH, url or a zip file (click on the green 'Code' button in the top r
 One may navigate to the repo via the command line, or from the jupyter notebook web browser interface.
 
 ### Install dependencies
-From the command line run either
+From the command line run
 ```
 pip install caterva2[services]==2025.8.7 psutils blosc2==3.7.0 matplotlib ipympl
-```
-or 
-```
-conda install -c conda-forge caterva2[services]==2025.8.7 psutils python-blosc2=3.7.0 matplotlib ipympl
 ```
 Alternatively, in a jupyter notebook cell, run (note the exclamation mark).
 ```
 !pip install caterva2[services]==2025.8.7 psutils blosc2==3.7.0 matplotlib ipympl
 ```
-
 That should be it! Open the first notebook and check that the first few cells all run to be sure!
