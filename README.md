@@ -29,8 +29,8 @@ Once installed, you can launch Jupyter Notebook by running
 which will open a window in your browser, where you may manage notebooks.
 
 ### Clone this git repo
-Use either SSH, url or a zip file, making sure to clone into the relevant directory. One may navigate to the repo
-via the command line, or from the jupyter notebook web browser interface.
+Use either SSH, url or a zip file (click on the green 'Code' button in the top right), making sure to clone into the relevant directory. 
+One may navigate to the repo via the command line, or from the jupyter notebook web browser interface.
 
 ### Install dependencies
 From the command line run either
