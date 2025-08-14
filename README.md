@@ -12,6 +12,9 @@ Before installing Jupyter Notebook, make sure you have Python (version 3.8 or la
 python --version
 pip --version
 ```
+You may want to create an environment via
+```conda create --name testenv python=3.12```
+if you have ``conda`` installed. You will still have to use ``pip`` to install the packages though.
 
 ### Installing Jupyter Notebook
 Install Jupyter using ``pip`` via
