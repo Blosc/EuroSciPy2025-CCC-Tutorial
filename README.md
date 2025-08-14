@@ -35,15 +35,15 @@ One may navigate to the repo via the command line, or from the jupyter notebook 
 ### Install dependencies
 From the command line run either
 ```
-pip install caterva2[services]==2025.8.7 os psutils time blosc2==3.7.0 matplotlib ipympl numpy
+pip install caterva2[services]==2025.8.7 psutils blosc2==3.7.0 matplotlib ipympl
 ```
 or 
 ```
-conda install -c conda-forge caterva2[services]==2025.8.7 os psutils time blosc2==3.7.0 matplotlib ipympl numpy
+conda install -c conda-forge caterva2[services]==2025.8.7 psutils python-blosc2=3.7.0 matplotlib ipympl
 ```
 Alternatively, in a jupyter notebook cell, run (note the exclamation mark).
 ```
-!pip install caterva2[services]==2025.8.7 os psutils time blosc2==3.7.0 matplotlib ipympl numpy
+!pip install caterva2[services]==2025.8.7 psutils blosc2==3.7.0 matplotlib ipympl
 ```
 
 That should be it! Open the first notebook and check that the first few cells all run to be sure!
